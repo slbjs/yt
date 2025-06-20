@@ -1,4 +1,2 @@
-{
-  "version": 2,
-  "builds": [{ "src": "api/index.ts", "use": "@vercel/node" }]
-}
+// File: vercel.json { "builds": [ { "src": "api/index.ts", "use": "@vercel/node" } ] }
+// File: package.json { "name": "yt-downloader-api", "version": "1.0.0", "main": "index.js", "type": "module", "scripts": { "dev": "vercel dev", "start": "node api/index.ts" }, "dependencies": { "got": "^13.0.0", "form-data": "^4.0.0", "cheerio": "^1.0.0-rc.12" }, "devDependencies": { "@vercel/node": "^1.15.0" } }
