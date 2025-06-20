@@ -1,13 +1,12 @@
 import { z } from 'zod'
 
-export const SnapSaveArgsSchema = z.tuple([z.string()])
 export const SnapSaveSchema = z.object({
   title: z.string().optional(),
   description: z.string().optional(),
   results: z.array(z.object({
     resolution: z.string().optional(),
-    thumbnail: z.string(),
     url: z.string(),
+    thumbnail: z.string().optional(),
     shouldRender: z.boolean().optional()
   }))
 })
